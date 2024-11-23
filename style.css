@@ -1,0 +1,61 @@
+html {
+    font-family: sans-serif;
+}
+
+* {
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+body {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #0b0f08;
+  --text-color: whitesmoke;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    background-image: url("file:///Users/zadaziri/repos/vanilla/template/assets/texture.svg");
+    margin: 0;
+    background
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.config {
+    position: fixed;
+    width: 200px;
+    top: 2rem;
+    right: 2rem;
+    color: whitesmoke;
+}
+
+.config .header {
+    padding: 0.5rem 0;
+    background-color: #414a4c;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 0.25rem 0.25rem 0 0;
+
+    color: inherit;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#config-body {
+    padding: 1rem 0.5rem;
+    background-color: dimgray;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
